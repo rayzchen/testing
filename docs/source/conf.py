@@ -55,5 +55,16 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+hoverxref_intersphinx = ["python"]
+hoverxref_default_type = "tooltip"
 hoverxref_auto_ref = True
-hovexref_domains = ["py"]
+hoverxref_domains = [
+    "py"
+]
+hoverxref_role_types = {
+    "class": "tooltip",
+    "exc": "tooltip",
+    "meth": "tooltip",
+    "func": "tooltip",
+    "attr": "tooltip",
+}
